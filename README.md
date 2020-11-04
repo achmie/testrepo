@@ -1,2 +1,2 @@
 # testrepo
-Zmiana
+To jest mój wspaniały projekt. Nie będzie już lepszego.
