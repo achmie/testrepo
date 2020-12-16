@@ -1,0 +1,44 @@
+/*!
+
+\page rozklady Rozkłady prawdopodobieństwa
+
+\section wykresyRozkladow Parametry i wykresy przykładowych rozkładów
+Statystyczna teoria niezawodności wykorzystuje wiele różnych rozkładów prawdopodobieństwa 
+do modelowania zjawisk związanych z czasem życia produktu. Znaczna część tych rozkładów ma 
+swoje korzenie w określonych zjawiskach fizycznych. Jednym z najlepszych przykładów tego rodzaju 
+jest rozkład Weibulla, który swoje podwaliny bierze w statystycznym modelowaniu siły zrywającej 
+materiał. Jego główna idea opiera się na założeniu, że cały łańcuch jest tak 
+mocny, jak jego najsłabsze ogniwo. Więcej informacji o tym rozkładzie zostanie przedstawionych 
+w kolejnej części, a tymczasem przejdźmy do prezentacji podstawowych rozkładów stosowanych 
+w teorii niezawodności. W kolejnych punktach przez: \f$ f(t) \f$ będziemy oznaczali gęstość rozkładu 
+awaryjności, \f$ h(t) \f$ będzie funkcją współczynnika awaryjności, \f$ \mu \f$ będzie średnim czasem 
+oczekiwania na awarię, a przez \f$ \sigma^2 \f$ oznaczymy wariancję rozkładu awaryjności.
+
+-# Rozkład wykładniczy
+	\f{eqnarray*}{
+		f(t) &=& \lambda e^{-\lambda t} \\
+		h(t) &=& \lambda \\
+		\mu &=& \lambda^{-1} \\
+		\sigma^2 &=& \lambda^{-2}
+	\f}
+	gdzie \f$ t > 0, \lambda > 0 \f$.
+	\image html fig01.png "Przykładowy wykres rozkładu wykładniczego" width=30%
+
+-# Rozkład Weibulla
+	\f{eqnarray*}{
+		f(t) &=& \lambda k t^{k-1} e^{-\lambda t^k} \\
+		h(t) &=& \lambda k t^{k-1} \\
+		\mu &=& \lambda^{-\frac{1}{k}} \Gamma\left(1+\frac{1}{k}\right) \\
+		\sigma^2 &=& \lambda^{-\frac{2}{k}}\left[\Gamma\left(1+\frac{2}{k}\right)
+			- \Gamma^2\left(1+\frac{1}{k}\right)\right]
+	\f}
+	gdzie \f$t > 0, \lambda > 0, k > 0\f$. Warto w tym miejscu podkreślić, że rozkład ten pojawia 
+	się w swojej alternatywnej postaci jako funkcja
+	\f{eqnarray*}{
+		f(t) &=& \frac{k}{\lambda}\left(\frac{t}{\lambda}\right)^{k-1}e^{-(t/\lambda)^k},
+	\f}
+	która powstaje przez proste mapowanie \f$t \mapsto \lambda^{k+1}t\f$.
+	\image html fig02.png "Przykładowy wykres rozkładu Weibulla" width=30%
+
+*/
+

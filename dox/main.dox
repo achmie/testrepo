@@ -1,0 +1,27 @@
+/*!
+
+\mainpage Koncepcja oprogramowania
+
+Głównym zadaniem predykcyjnego utrzymania ruchu jest taka kontrola procesu produkcyjnego, która 
+pozwala na wykrycie miejsca potencjalnej awarii jeszcze przed jej fizycznym wystąpieniem. Instalowanie 
+różnego rodzaju czujników i systemów pomiarowych pozwala kontrolować parametry pracy urządzeń 
+i w odpowiedni sposób reagować na ich zachowanie. W wielu sytuacjach dane przekazywane z czujników 
+pozwalają obserwować proces powolnego zużywania się części eksploatacyjnych. Nadal jednak istnieje 
+spora część elementów, których stan przydatności nie jest monitorowany i analizowany przez systemy 
+informatyczne. Niezależnie jednak od tego, czy monitorujemy stan danego elementu, to charakteryzuje 
+się on pewnym stopniem niezawodności, który maleje wraz z czasem eksploatacji. Rachunek 
+prawdopodobieństwa i statystyka stanowią więc naturalną podstawę do modelowania tego rodzaju 
+zjawisk. Dwudziesty wiek przyniósł ogromny wzrost zainteresowania wykorzystaniem modelowania 
+statystycznego w organizacji produkcji. Począwszy od kart kontrolnych Shewarta, 
+przez rozkłady czasu życia Weibulla, po niezawodność statystyczną 
+mamy do czynienia z bardzo intensywnym wykorzystywaniem tych działów 
+matematyki. W kolejnych częściach tego rozdziału zostanie przybliżona statystyczna teoria 
+niezawodności, rozkład Weibulla oraz jego zastosowania. Szczególną uwagę zwrócimy na problem 
+optymalizowania kosztów eksploatacji elementów nienaprawialnych.
+
+Opis wykorzystanych rozkładów prawdopodobieństwa
+- \subpage rozklady
+
+
+*/
+
