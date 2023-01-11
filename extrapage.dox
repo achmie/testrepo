@@ -1,0 +1,55 @@
+/*! \mainpage My Personal Index Page
+ *
+ * \section intro_sec Introduction
+ *
+ * This is the introduction.
+ *
+ * \section install_sec Installation
+ *
+ * \subsection step1 Step 1: Opening the box
+ *
+ * etc...
+ 
+<table>
+<caption id="multi_row">Complex table</caption>
+<tr><th>Column 1                      <th>Column 2        <th>Column 3
+<tr><td rowspan="2">cell row=1+2,col=1<td>cell row=1,col=2<td>cell row=1,col=3
+<tr><td rowspan="2">cell row=2+3,col=2                    <td>cell row=2,col=3
+<tr><td>cell row=3,col=1                                  <td rowspan="2">cell row=3+4,col=3
+<tr><td colspan="2">cell row=4,col=1+2
+<tr><td>cell row=5,col=1              <td colspan="2">cell row=5,col=2+3
+<tr><td colspan="2" rowspan="2">cell row=6+7,col=1+2      <td>cell row=6,col=3
+<tr>                                                      <td>cell row=7,col=3
+<tr><td>cell row=8,col=1              <td>cell row=8,col=2\n
+  <table>
+    <tr><td>Inner cell row=1,col=1<td>Inner cell row=1,col=2
+    <tr><td>Inner cell row=2,col=1<td>Inner cell row=2,col=2
+  </table>
+  <td>cell row=8,col=3
+  <ul>
+    <li>Item 1
+    <li>Item 2
+  </ul>
+</table>
+
+
+This manual is divided in the following sections:
+- \subpage page1
+
+ */
+ 
+ /*! \page page1 Dodatkowa strona dokumentacji
+  \tableofcontents
+  Leading text.
+  \section sec An example section
+  This page contains the subsections \ref subsection1 and \ref subsection2.
+  For more info see page \ref page2.
+  \subsection subsection1 The first subsection
+  Text.
+  \subsection subsection2 The second subsection
+  More text.
+*/
+ 
+/*! \page page2 Jeszcze jedna strona dokuymentacji
+  Even more info.
+*/
